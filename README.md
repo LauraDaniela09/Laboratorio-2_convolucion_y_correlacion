@@ -6,6 +6,5 @@ En este laboratorio  se observo cómo se comportan las señales tanto en el tiem
 
 ## Parte A
 <p align="center">
-    <img ![Uploading image.png…]()
-
+    <img <img width="1155" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
 </p>
