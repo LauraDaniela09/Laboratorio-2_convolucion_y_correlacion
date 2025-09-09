@@ -70,5 +70,9 @@ print("Antonia - y[n] =", y2.tolist())
 print("Laura - y[n] =", y3.tolist())
 ```
 
+<p align="center">
+  <img<img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/5da12f33-2c6e-4ee8-99c5-45cbe81e6663" />
+</p>
+
 Este código en Python calcula la convolución discreta entre dos señales utilizando la función np.convolve() de NumPy. Primero, se definen dos listas, h y x, que representan la respuesta al impulso de un sistema y una señal de entrada, respectivamente. Luego, se aplica la convolución entre estas dos señales usando np.convolve(x, h, mode='full'), lo que genera una nueva señal y cuya longitud es la suma de las longitudes de x y h menos uno. La convolución es una operación fundamental en procesamiento de señales, ya que permite analizar cómo una señal se ve afectada por un sistema. Finalmente, el código imprime las señales h, x y y para visualizar los datos y el resultado de la convolución.
 
