@@ -81,3 +81,4 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 ## Parte B
 
 ## Parte C
+...
