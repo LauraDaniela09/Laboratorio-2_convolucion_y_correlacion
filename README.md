@@ -99,6 +99,10 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 
 <h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
 <p align="center">
+<img width="311" height="608" alt="image" src="https://github.com/user-attachments/assets/9065b311-a45d-46a8-be42-f79db087f73d" />
+</p>
+
+<p align="center">
 <img width="600" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
 </p>
 
