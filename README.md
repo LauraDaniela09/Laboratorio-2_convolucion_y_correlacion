@@ -1,4 +1,4 @@
-# Laboratorio-2---convolucion-y-correlacion
+# Laboratorio-2---convolución-y-correlación
 En este laboratorio se desarrollo a partir de unas señales la convolución, correlación cruzada y frecuencia de Nyquist 
 
 ## Introducción
@@ -89,5 +89,10 @@ Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
     </p>
     Sustituimos el valor de Ts (periodo de muestreo) para calcular w (frecuencia angular discreta)  y Fs (frecuencia de muestreo). 
     Esta frecuencia angular discreta la reemplazamos como el argumento en la ecuación de cada señal.
+<p align="center">
+ <img width="965" height="527" alt="image" src="https://github.com/user-attachments/assets/4f1da754-c7d2-4634-a9d6-2f2bf2e9bfb2" />
+    </p>
+    Usando la frecuencia de 100Hz y la frecuencia de muestreo de 800Hz, se calcula el número de muestras por periodo.
+    Posteriormente, se calculan los valores de X1(n) y X2(n) desde n=0, hasta n=8.
 
 ## Parte C
