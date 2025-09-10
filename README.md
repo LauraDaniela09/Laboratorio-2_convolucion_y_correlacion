@@ -122,6 +122,7 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 <p align="center">
 <img width="1179" height="780" alt="image" src="https://github.com/user-attachments/assets/0938be7a-fd08-43c6-8715-6a66fc5b2a9c" />
     </p>
+    
     Se grafican aproximadamente los valores de k (eje x) v.s los valores de r(k) (eje y).
 
     
@@ -129,10 +130,16 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 <img width="1119" height="312" alt="image" src="https://github.com/user-attachments/assets/df2d4b0e-dd44-4283-8fe9-0cd6ab795040" />
     </p>
 
-De esta convolución podemos interpretar que:
-el seno y el coseno son ortogonales en la ventana ya que r(0)=0.
-La función es de carácter impar ya que -r(k) = r(-k).
-Los picos en K = 2 y -2, describen que la mejor alineación entre ambas señales existe trasladando 2 muestras (desfase de 90 grados).
+    De esta convolución podemos interpretar que:
+    el seno y el coseno son ortogonales en la ventana ya que r(0)=0.
+    La función es de carácter impar ya que -r(k) = r(-k).
+    Los picos en K = 2 y -2, describen que la mejor alineación entre ambas señales existe trasladando 2 muestras (desfase de 90 grados).
 
+¿En qué situaciones resulta útil aplicar la correlación cruzada en el procesamiento digital de señales?
+-Estimar retardos de tiempo entre señales. Esto se aplica en radar, sonar o acústica, donde se mide cuánto tarda una señal en llegar a diferentes receptores y así localizar la fuente.
+-Sincronizar señales digitales. Comparando la señal recibida con una secuencia de "referencia", el sistema es capaz de alinear el reloj de muestreo y recuperar esta información transmitida.
+Ddetección de patrones. Se pueden detectar complejos QRS en el ECG comparando la señal real con una forma de onda típica almacenada como template.
+-Identificar ecos o multitrayectorias. En acústica y encomunicaciones inalámbricas para reconocer copias retardadas de la misma señal causadas por reflexiones.
+-Estimar desfases o similitud entre señales periódicas. Entre señales periódica se puede determinar en qué punto dos ondas senoidales están más alineadas o desfasadas, a través de la posición del máximo o mínimo de la función de correlación.
 
 ## Parte C
