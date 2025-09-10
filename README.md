@@ -107,4 +107,20 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
     El número total de muestras es de 9, por lo tanto la longitud de la secuencia es del 17, con valores de -8 a 8. 
     Finalmente se genera una tabla con los resultados de r(k).
 
+<p align="center">
+<img width="1179" height="780" alt="image" src="https://github.com/user-attachments/assets/0938be7a-fd08-43c6-8715-6a66fc5b2a9c" />
+    </p>
+    Se grafican aproximadamente los valores de k (eje x) v.s los valores de r(k) (eje y).
+
+    
+<p align="center">
+<img width="1119" height="312" alt="image" src="https://github.com/user-attachments/assets/df2d4b0e-dd44-4283-8fe9-0cd6ab795040" />
+    </p>
+
+De esta convolución podemos interpretar que:
+el seno y el coseno son ortogonales en la ventana ya que r(0)=0.
+La función es de carácter impar ya que -r(k) = r(-k).
+Los picos en K = 2 y -2, describen que la mejor alineación entre ambas señales existe trasladando 2 muestras (desfase de 90 grados).
+
+
 ## Parte C
