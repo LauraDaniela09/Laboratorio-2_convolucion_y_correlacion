@@ -154,7 +154,7 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 -Estimar desfases o similitud entre señales periódicas. Entre señales periódica se puede determinar en qué punto dos ondas senoidales están más alineadas o desfasadas, a través de la posición del máximo o mínimo de la función de correlación.  
 
 <h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
-inicalmente para la adquisición de la señal EOG se utilizó el código proporcionado que emplea la librería `nidaqmx`, la cual permite interactuar con dispositivos NI DAQ para la captura de señales analógicas. En el código se configura el canal de entrada analógica, la frecuencia de muestreo (800 Hz, cumpliendo el criterio de Nyquist), y el tiempo total de adquisición (5 segundos). Luego, se realiza la lectura finita de muestras y se guarda la señal en un vector. Finalmente, se genera un gráfico que muestra la señal adquirida en función del tiempo, permitiendo visualizar claramente la señal EOG en formato digital lista para su posterior análisis.
+inicalmente para la adquisición de la señal EOG se utilizó el código proporcionado que emplea la librería `nidaqmx` , la cual permite interactuar con dispositivos NI DAQ para la captura de señales analógicas. En el código se configura el canal de entrada analógica, la frecuencia de muestreo (800 Hz, cumpliendo el criterio de Nyquist), y el tiempo total de adquisición (5 segundos). Luego, se realiza la lectura finita de muestras y se guarda la señal en un vector. Finalmente, se genera un gráfico que muestra la señal adquirida en función del tiempo, permitiendo visualizar claramente la señal EOG en formato digital lista para su posterior análisis.
 
 
 <p align="center">
