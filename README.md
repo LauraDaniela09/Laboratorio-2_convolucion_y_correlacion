@@ -303,10 +303,48 @@ Se calcula la Transformada de Fourier para analizar la señal en frecuencia, mos
 <img width="1000" height="590" alt="image" src="https://github.com/user-attachments/assets/8b8a204a-5b72-4e7a-8ba7-386d69d273f4" />
 </p>
 
+```python
+f_psd, Pxx = welch(signal2.values, fs, nperseg=1024)
+
+limite_frecuencia = 200
+mask = f_psd <= limite_frecuencia
+
+freq_media = np.sum(f_psd[mask] * Pxx[mask]) / np.sum(Pxx[mask])
+
+acum_psd = np.cumsum(Pxx[mask])
+acum_psd /= acum_psd[-1]  # Normalizar a 1
+freq_mediana = f_psd[mask][np.where(acum_psd >= 0.5)[0][0]]
+
+var_frec = np.sum(((f_psd[mask] - freq_media)**2) * Pxx[mask]) / np.sum(Pxx[mask])
+desv_est_frec = np.sqrt(var_frec)
+
+print(f"Frecuencia media: {freq_media:.2f} Hz")
+print(f"Frecuencia mediana: {freq_mediana:.2f} Hz")
+print(f"Desviación estándar: {desv_est_frec:.2f} Hz")
+
+plt.figure(figsize=(10, 5))
+plt.bar(f_psd[mask], Pxx[mask], width=f_psd[1]-f_psd[0], color='teal')
+plt.title("Histograma de frecuencias (PSD)")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Potencia")
+plt.grid(True)
+plt.show()
+```
+
 Finalmente se calcula la densidad espectral de potencia (PSD) de la señal hasta 200 Hz, un rango relevante para señales biológicas. A partir de la PSD se obtienen tres estadísticas clave:
 
-*la `frecuencia media` es el promedio ponderado por la potencia
-*la `frecuencia mediana` divide la energía total en dos partes iguales
+*la `frecuencia media` es el promedio ponderado por la potencia.
+
+*la `frecuencia mediana` divide la energía total en dos partes iguales.
+
 *la `desviación estándar`mide la dispersión de la energía en frecuencias.
 
 posteriormente, se grafica un histograma que muestra la distribución de potencia a lo largo del espectro de frecuencias, facilitando la visualización de dónde se concentra la energía de la señal.
+
+*histograma*
+
+<p align="center">
+<img width="872" height="470" alt="image" src="https://github.com/user-attachments/assets/cc839060-cbc4-47ea-b81c-5c59fc73e24b" />
+</p>
+
+
