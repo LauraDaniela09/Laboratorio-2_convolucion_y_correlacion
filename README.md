@@ -303,3 +303,10 @@ Se calcula la Transformada de Fourier para analizar la señal en frecuencia, mos
 <img width="1000" height="590" alt="image" src="https://github.com/user-attachments/assets/8b8a204a-5b72-4e7a-8ba7-386d69d273f4" />
 </p>
 
+Finalmente se calcula la densidad espectral de potencia (PSD) de la señal hasta 200 Hz, un rango relevante para señales biológicas. A partir de la PSD se obtienen tres estadísticas clave:
+
+*la `frecuencia media` es el promedio ponderado por la potencia
+*la `frecuencia mediana` divide la energía total en dos partes iguales
+*la `desviación estándar`mide la dispersión de la energía en frecuencias.
+
+posteriormente, se grafica un histograma que muestra la distribución de potencia a lo largo del espectro de frecuencias, facilitando la visualización de dónde se concentra la energía de la señal.
