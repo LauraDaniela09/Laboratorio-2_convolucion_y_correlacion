@@ -145,6 +145,7 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 -Estimar desfases o similitud entre señales periódicas. Entre señales periódica se puede determinar en qué punto dos ondas senoidales están más alineadas o desfasadas, a través de la posición del máximo o mínimo de la función de correlación.  
 
 ## Parte C
+
 ```python
 df = pd.read_csv('senal_guardada2.csv')
 x = df.iloc[:, 0]
@@ -159,4 +160,5 @@ plt.show()
 signal2= df.iloc[:, 1]
 color='red'
 ```
+Este código carga una señal EOG desde un archivo `CSV `usando `pandas`, extrae las columnas de `tiempo` y `voltaje`, y luego grafica la señal en función del tiempo con `matplotlib`, mostrando la variación del voltaje en milivoltios y agregando etiquetas y una cuadrícula para facilitar la visualización.
 
