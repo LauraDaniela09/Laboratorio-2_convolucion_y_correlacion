@@ -247,12 +247,59 @@ Se calcularon los estadísticos descriptivos fundamentales de la señal EOG para
  Estos parámetros son esenciales para comprender la distribución y estabilidad de la señal antes de realizar análisis más profundos.
  
  **resultados**
+ 
 *Media: 0.15874137409805553
-
 *Mediana: 0.13174945232458413
-
 *Desviación estándar: 0.1580258539091611
-
 *Máximo: 0.7196162504842505
-
 *Mínimo: -0.49320164741948247
+
+```python
+
+N = len(signal2)
+yf = fft(signal2)
+xf = fftfreq(N, 1/fs)
+
+
+xf_pos = xf[:N//2]
+yf_pos = np.abs(yf[:N//2])
+
+
+max_freq = 100   # cambia según tu aplicación
+mask = xf_pos <= max_freq
+xf_rec = xf_pos[mask]
+yf_rec = yf_pos[mask]
+
+
+f_psd, Pxx = welch(signal2.values, fs, nperseg=1024)
+
+
+plt.figure(figsize=(12, 6))
+
+
+plt.subplot(2, 1, 1)
+plt.plot(xf_rec, yf_rec)
+plt.title("Transformada de Fourier (Magnitud) - Recortada")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Amplitud")
+plt.grid(True)
+
+plt.subplot(2, 1, 2)
+plt.semilogy(f_psd, Pxx)
+plt.title("Densidad espectral de potencia (PSD)")
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Potencia/Hz (dB/Hz)")
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+
+Se calcula la Transformada de Fourier para analizar la señal en frecuencia, mostrando solo las frecuencias positivas hasta 100 Hz para mayor claridad. Además, se estima la densidad espectral de potencia con el método de Welch y se grafican ambos resultados para visualizar la distribución de energía en la señal.
+
+*graficas*
+
+<p align="center">
+<img width="1000" height="590" alt="image" src="https://github.com/user-attachments/assets/8b8a204a-5b72-4e7a-8ba7-386d69d273f4" />
+</p>
+
