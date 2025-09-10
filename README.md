@@ -341,10 +341,20 @@ Finalmente se calcula la densidad espectral de potencia (PSD) de la señal hasta
 
 posteriormente, se grafica un histograma que muestra la distribución de potencia a lo largo del espectro de frecuencias, facilitando la visualización de dónde se concentra la energía de la señal.
 
-*histograma*
+*histograma y resultados*
+*Frecuencia media: 18.74 Hz
+*Frecuencia mediana: 9.77 Hz
+*Desviación estándar: 24.43 Hz
 
 <p align="center">
 <img width="872" height="470" alt="image" src="https://github.com/user-attachments/assets/cc839060-cbc4-47ea-b81c-5c59fc73e24b" />
 </p>
 
+Adicionalmente se realizo la clasifiacion de la señal :
+
+**Determinística vs Aleatoria:** La señal EOG es generalmente aleatoria, ya que presenta variaciones impredecibles debido a la actividad natural del ojo y el ruido biológico, aunque puede tener componentes periódicos asociados a movimientos repetitivos.
+
+**Periódica vs Apperiodica:** La señal EOG es apperiodica o no estrictamente periódica, dado que sus características no se repiten de forma exacta en el tiempo, reflejando la dinámica irregular de los movimientos oculares.
+
+**Analógica vs Digital:** Originalmente, la señal EOG es analógica, ya que es una señal continua en el tiempo y en amplitud. Sin embargo, al ser adquirida y almacenada en un computador mediante un proceso de muestreo, se convierte en una señal digital para su procesamiento.
 
