@@ -82,25 +82,29 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 <p align="center">
 <img width="867" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
 </p>
-Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
+
+    Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
 
 <p align="center">
     <img width="1127" height="419" alt="image" src="https://github.com/user-attachments/assets/ea0980be-05ba-41c2-9b43-2d785afde5c0" />
     </p>
+    
     Sustituimos el valor de Ts (periodo de muestreo) para calcular w (frecuencia angular discreta)  y Fs (frecuencia de muestreo). 
     Esta frecuencia angular discreta la reemplazamos como el argumento en la ecuación de cada señal.
     
 <p align="center">
  <img width="965" height="527" alt="image" src="https://github.com/user-attachments/assets/4f1da754-c7d2-4634-a9d6-2f2bf2e9bfb2" />
     </p>
+    
     Usando la frecuencia de 100Hz y la frecuencia de muestreo de 800Hz, se calcula el número de muestras por periodo.
     Posteriormente, se calculan los valores de X1(n) y X2(n) desde n=0, hasta n=8.
 
 <p align="center">
 <img width="1002" height="597" alt="image" src="https://github.com/user-attachments/assets/66be9013-b4a5-4ed7-82f6-ac3c55dd1476" />
     </p>
-Se calcula la correlación entre estas dos señales. 
-El número total de muestras es de 9, por lo tanto la longitud de la secuencia es del 17, con valores de -8 a 8. 
-Finalmente se genera una tabla con los resultados de r(k).
+    
+    Se calcula la correlación entre estas dos señales. 
+    El número total de muestras es de 9, por lo tanto la longitud de la secuencia es del 17, con valores de -8 a 8. 
+    Finalmente se genera una tabla con los resultados de r(k).
 
 ## Parte C
