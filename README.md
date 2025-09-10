@@ -135,7 +135,7 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
     La función es de carácter impar ya que -r(k) = r(-k).
     Los picos en K = 2 y -2, describen que la mejor alineación entre ambas señales existe trasladando 2 muestras (desfase de 90 grados).
 
-# ¿En qué situaciones resulta útil aplicar la correlación cruzada en el procesamiento digital de señales?
+### ¿En qué situaciones resulta útil aplicar la correlación cruzada en el procesamiento digital de señales?
 -Estimar retardos de tiempo entre señales. Esto se aplica en radar, sonar o acústica, donde se mide cuánto tarda una señal en llegar a diferentes receptores y así localizar la fuente.
 -Sincronizar señales digitales. Comparando la señal recibida con una secuencia de "referencia", el sistema es capaz de alinear el reloj de muestreo y recuperar esta información transmitida.
 Ddetección de patrones. Se pueden detectar complejos QRS en el ECG comparando la señal real con una forma de onda típica almacenada como template.
