@@ -20,7 +20,12 @@ from scipy.signal import welch
 
 Este bloque importa librerías clave para analizar señales biológicas: ` wfdb`  para leer datos fisiológicos, ` numpy`  y `  pandas`  para manejo numérico y de datos, ` matplotlib`  y `  seaborn`  para gráficos, y funciones de `scipy` para calcular la transformada de Fourier y la densidad espectral de potencia, herramientas fundamentales para estudiar las características temporales y frecuenciales de la señal.
 
-## Parte A
+<h1 align="center"><i><b>PARTE A DEL LABORATORIO</b></i></h1>
+
+<p align="center">
+<img width="397" height="601" alt="image" src="https://github.com/user-attachments/assets/39417bd5-72e7-4804-afea-c7df0d841e01" />
+</p>
+
 <p align="center">
     <img <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
 </p>
@@ -92,7 +97,7 @@ Este código en Python calcula la convolución discreta entre dos señales utili
 
 La convolución es una operación fundamental en procesamiento de señales, ya que permite analizar cómo una señal se ve afectada por un sistema. Finalmente, el código imprime las señales `h`, `x` y y para visualizar los datos y el resultado de la convolución.
 
-## Parte B
+<h1 align="center"><i><b>PARTE B DEL LABORATORIO</b></i></h1>
 <p align="center">
 <img width="600" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
 </p>
@@ -144,7 +149,7 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 -Identificar ecos o multitrayectorias. En acústica y encomunicaciones inalámbricas para reconocer copias retardadas de la misma señal causadas por reflexiones.  
 -Estimar desfases o similitud entre señales periódicas. Entre señales periódica se puede determinar en qué punto dos ondas senoidales están más alineadas o desfasadas, a través de la posición del máximo o mínimo de la función de correlación.  
 
-## Parte C
+<h1 align="center"><i><b>PARTE C DEL LABORATORIO</b></i></h1>
 inicalmente para la adquisición de la señal EOG se utilizó el código proporcionado que emplea la librería `nidaqmx`, la cual permite interactuar con dispositivos NI DAQ para la captura de señales analógicas. En el código se configura el canal de entrada analógica, la frecuencia de muestreo (800 Hz, cumpliendo el criterio de Nyquist), y el tiempo total de adquisición (5 segundos). Luego, se realiza la lectura finita de muestras y se guarda la señal en un vector. Finalmente, se genera un gráfico que muestra la señal adquirida en función del tiempo, permitiendo visualizar claramente la señal EOG en formato digital lista para su posterior análisis.
 
 
@@ -352,9 +357,13 @@ posteriormente, se grafica un histograma que muestra la distribución de potenci
 
 Adicionalmente se realizo la clasifiacion de la señal :
 
-**Determinística vs Aleatoria:** La señal EOG es generalmente aleatoria, ya que presenta variaciones impredecibles debido a la actividad natural del ojo y el ruido biológico, aunque puede tener componentes periódicos asociados a movimientos repetitivos.
+**Determinística o Aleatoria:** La señal EOG es generalmente aleatoria, ya que presenta variaciones impredecibles debido a la actividad natural del ojo y el ruido biológico, aunque puede tener componentes periódicos asociados a movimientos repetitivos.
 
-**Periódica vs Apperiodica:** La señal EOG es apperiodica o no estrictamente periódica, dado que sus características no se repiten de forma exacta en el tiempo, reflejando la dinámica irregular de los movimientos oculares.
+**Periódica o Apperiodica:** La señal EOG es apperiodica o no estrictamente periódica, dado que sus características no se repiten de forma exacta en el tiempo, reflejando la dinámica irregular de los movimientos oculares.
 
-**Analógica vs Digital:** Originalmente, la señal EOG es analógica, ya que es una señal continua en el tiempo y en amplitud. Sin embargo, al ser adquirida y almacenada en un computador mediante un proceso de muestreo, se convierte en una señal digital para su procesamiento.
+**Analógica o Digital:** Originalmente, la señal EOG es analógica, ya que es una señal continua en el tiempo y en amplitud. Sin embargo, al ser adquirida y almacenada en un computador mediante un proceso de muestreo, se convierte en una señal digital para su procesamiento.
+
+<h1 align="center"><i><b>Bibliografia</b></i></h1>
+
+
 
