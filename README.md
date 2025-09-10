@@ -149,7 +149,7 @@ inicalmente para la adquisición de la señal EOG se utilizó el código proporc
 
 
 <p align="center">
-<img width="200" height="600" alt="image" src="https://github.com/user-attachments/assets/3852f774-2bbb-4476-a4b5-468acdf76399" />
+<img width="250" height="600" alt="image" src="https://github.com/user-attachments/assets/3852f774-2bbb-4476-a4b5-468acdf76399" />
   </p>
   
 ```python
@@ -214,4 +214,36 @@ signal2= df.iloc[:, 1]
 color='red'
 ```
 Este código carga una señal EOG desde un archivo `CSV `usando `pandas`, extrae las columnas de `tiempo` y `voltaje`, y luego grafica la señal en función del tiempo con `matplotlib`, mostrando la variación del voltaje en milivoltios y agregando etiquetas y una cuadrícula para facilitar la visualización.
+*grafica*
 
+<p align="center">
+<img width="700" height="470" alt="image" src="https://github.com/user-attachments/assets/c7c55d42-851e-4fd6-add1-f6800ad75bac" />
+</p>
+
+```python
+senal=signal2
+media = np.mean(senal)
+mediana = np.median(senal)
+desviacion = np.std(senal)
+maximo = np.max(senal)
+minimo = np.min(senal)
+
+
+print(f"Media: {media}")
+print(f"Mediana: {mediana}")
+print(f"Desviación estándar: {desviacion}")
+print(f"Máximo: {maximo}")
+print(f"Mínimo: {minimo}")
+```
+Se calcularon los estadísticos descriptivos fundamentales de la señal EOG para caracterizar su comportamiento en el dominio temporal. 
+*La` media `indica el valor promedio general.*
+*la `mediana` representa el punto central de los datos.
+*la `desviación` estándar muestra la variabilidad o dispersión de la señal.
+ *El `máximo` y `mínimo` reflejan los valores extremos o picos. 
+ Estos parámetros son esenciales para comprender la distribución y estabilidad de la señal antes de realizar análisis más profundos.
+ **resultados**
+*Media: 0.15874137409805553
+*Mediana: 0.13174945232458413
+*Desviación estándar: 0.1580258539091611
+*Máximo: 0.7196162504842505
+*Mínimo: -0.49320164741948247
