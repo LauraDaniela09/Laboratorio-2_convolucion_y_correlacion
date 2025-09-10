@@ -4,6 +4,22 @@ En este laboratorio se desarrollo a partir de unas señales la convolución, cor
 ## Introducción
 En este laboratorio  se observo cómo se comportan las señales tanto en el tiempo como en la frecuencia. Lo haremos aplicando tres técnicas fundamentales: la convolución, la correlación y la transformada de Fourier. Además del análisis de una señal electrooculograma (EOG).
 
+## importación de librerias 
+```python
+!pip install wfdb
+import matplotlib.pyplot as plt
+import numpy as np
+import wfdb
+import pandas as pd
+import os
+from scipy.stats import norm
+import seaborn as sns
+from scipy.fft import fft, fftfreq
+from scipy.signal import welch
+```
+
+Este bloque importa librerías clave para analizar señales biológicas: ` wfdb`  para leer datos fisiológicos, ` numpy`  y `  pandas`  para manejo numérico y de datos, ` matplotlib`  y `  seaborn`  para gráficos, y funciones de `scipy` para calcular la transformada de Fourier y la densidad espectral de potencia, herramientas fundamentales para estudiar las características temporales y frecuenciales de la señal.
+
 ## Parte A
 
 ```mermaid
@@ -143,3 +159,18 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 -Estimar desfases o similitud entre señales periódicas. Entre señales periódica se puede determinar en qué punto dos ondas senoidales están más alineadas o desfasadas, a través de la posición del máximo o mínimo de la función de correlación.  
 
 ## Parte C
+```python
+df = pd.read_csv('senal_guardada2.csv')
+x = df.iloc[:, 0]
+y = df.iloc[:, 1]
+plt.figure(figsize=(10, 5))
+plt.plot(x,y,color='purple')
+plt.title('Señal de EOG extraida del generador')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Voltaje (mV)')
+plt.grid(True)
+plt.show()
+signal2= df.iloc[:, 1]
+color='red'
+```
+
