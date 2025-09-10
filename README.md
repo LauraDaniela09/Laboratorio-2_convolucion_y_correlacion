@@ -21,18 +21,6 @@ from scipy.signal import welch
 Este bloque importa librerías clave para analizar señales biológicas: ` wfdb`  para leer datos fisiológicos, ` numpy`  y `  pandas`  para manejo numérico y de datos, ` matplotlib`  y `  seaborn`  para gráficos, y funciones de `scipy` para calcular la transformada de Fourier y la densidad espectral de potencia, herramientas fundamentales para estudiar las características temporales y frecuenciales de la señal.
 
 ## Parte A
-
-```mermaid
-graph TD
-    A([Inicio]) --> B[Encontrar la señal y(n) resultante de la convolución de cada miembro del grupo, usando sumatoria]
-    B --> C[Realizar la represenatción grafica y secuencial a mano]
-    C --> D[Mostrar graficas]
-    D --> E[Instalar e importar librerías]
-    E --> F[Calcular la señal y(n) como en la parte b pero en Python]
-    F --> G[Calcular señal y(n)]
-    G --> H[Graficar señales]
-    L --> M([Fin])
-```
 <p align="center">
     <img <img width="1155" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
 </p>
@@ -40,8 +28,6 @@ graph TD
 ## Señal y[n] resultante de la convolución
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
 
 # EJEMPLO 1 - Karen
 
@@ -102,9 +88,9 @@ print("Laura - y[n] =", y3.tolist())
     <img <img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/300a745d-cdfe-4ab3-a412-432d85f5e715" />
 </p>
 
-Este código en Python calcula la convolución discreta entre dos señales utilizando la función np.convolve() de NumPy. Primero, se definen dos listas, h y x, que representan la respuesta al impulso de un sistema y una señal de entrada, respectivamente. Luego, se aplica la convolución entre estas dos señales usando np.convolve(x, h, mode='full'), lo que genera una nueva señal y cuya longitud es la suma de las longitudes de x y h menos uno. 
+Este código en Python calcula la convolución discreta entre dos señales utilizando la función `np.convolve()` de` NumPy`. Primero, se definen dos listas, `h` y `x`, que representan la respuesta al impulso de un sistema y una señal de entrada, respectivamente. Luego, se aplica la convolución entre estas dos señales usando `np.convolve(x, h, mode='full')`, lo que genera una nueva señal y cuya longitud es la suma de las longitudes de `x` y `h` menos uno. 
 
-La convolución es una operación fundamental en procesamiento de señales, ya que permite analizar cómo una señal se ve afectada por un sistema. Finalmente, el código imprime las señales h, x y y para visualizar los datos y el resultado de la convolución.
+La convolución es una operación fundamental en procesamiento de señales, ya que permite analizar cómo una señal se ve afectada por un sistema. Finalmente, el código imprime las señales `h`, `x` y y para visualizar los datos y el resultado de la convolución.
 
 ## Parte B
 <p align="center">
