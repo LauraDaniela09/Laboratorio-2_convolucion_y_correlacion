@@ -85,7 +85,7 @@ print("Laura - y[n] =", y3.tolist())
 ```
 
 <p align="center">
-    <img <img width="1389" height="989" alt="image" src="https://github.com/user-attachments/assets/300a745d-cdfe-4ab3-a412-432d85f5e715" />
+    <img <img width="1000" height="989" alt="image" src="https://github.com/user-attachments/assets/300a745d-cdfe-4ab3-a412-432d85f5e715" />
 </p>
 
 Este código en Python calcula la convolución discreta entre dos señales utilizando la función `np.convolve()` de` NumPy`. Primero, se definen dos listas, `h` y `x`, que representan la respuesta al impulso de un sistema y una señal de entrada, respectivamente. Luego, se aplica la convolución entre estas dos señales usando `np.convolve(x, h, mode='full')`, lo que genera una nueva señal y cuya longitud es la suma de las longitudes de `x` y `h` menos uno. 
@@ -94,27 +94,27 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 
 ## Parte B
 <p align="center">
-<img width="867" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
+<img width="700" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
 </p>
 
     Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
 
 <p align="center">
-    <img width="1127" height="419" alt="image" src="https://github.com/user-attachments/assets/ea0980be-05ba-41c2-9b43-2d785afde5c0" />
+    <img width="1000" height="419" alt="image" src="https://github.com/user-attachments/assets/ea0980be-05ba-41c2-9b43-2d785afde5c0" />
     </p>
     
     Sustituimos el valor de Ts (periodo de muestreo) para calcular w (frecuencia angular discreta)  y Fs (frecuencia de muestreo). 
     Esta frecuencia angular discreta la reemplazamos como el argumento en la ecuación de cada señal.
     
 <p align="center">
- <img width="965" height="527" alt="image" src="https://github.com/user-attachments/assets/4f1da754-c7d2-4634-a9d6-2f2bf2e9bfb2" />
+ <img width="900" height="527" alt="image" src="https://github.com/user-attachments/assets/4f1da754-c7d2-4634-a9d6-2f2bf2e9bfb2" />
     </p>
     
     Usando la frecuencia de 100Hz y la frecuencia de muestreo de 800Hz, se calcula el número de muestras por periodo.
     Posteriormente, se calculan los valores de X1(n) y X2(n) desde n=0, hasta n=8.
 
 <p align="center">
-<img width="1002" height="597" alt="image" src="https://github.com/user-attachments/assets/66be9013-b4a5-4ed7-82f6-ac3c55dd1476" />
+<img width="900" height="597" alt="image" src="https://github.com/user-attachments/assets/66be9013-b4a5-4ed7-82f6-ac3c55dd1476" />
     </p>
     
     Se calcula la correlación entre estas dos señales. 
@@ -122,14 +122,14 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
     Finalmente se genera una tabla con los resultados de r(k).
 
 <p align="center">
-<img width="1179" height="780" alt="image" src="https://github.com/user-attachments/assets/0938be7a-fd08-43c6-8715-6a66fc5b2a9c" />
+<img width="1000" height="780" alt="image" src="https://github.com/user-attachments/assets/0938be7a-fd08-43c6-8715-6a66fc5b2a9c" />
     </p>
     
     Se grafican aproximadamente los valores de k (eje x) v.s los valores de r(k) (eje y).
 
     
 <p align="center">
-<img width="1119" height="312" alt="image" src="https://github.com/user-attachments/assets/df2d4b0e-dd44-4283-8fe9-0cd6ab795040" />
+<img width="1000" height="312" alt="image" src="https://github.com/user-attachments/assets/df2d4b0e-dd44-4283-8fe9-0cd6ab795040" />
     </p>
 
     De esta convolución podemos interpretar que:
