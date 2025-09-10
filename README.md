@@ -146,6 +146,8 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 
 ## Parte C
 inicalmente para la adquisición de la señal EOG se utilizó el código proporcionado que emplea la librería `nidaqmx`, la cual permite interactuar con dispositivos NI DAQ para la captura de señales analógicas. En el código se configura el canal de entrada analógica, la frecuencia de muestreo (800 Hz, cumpliendo el criterio de Nyquist), y el tiempo total de adquisición (5 segundos). Luego, se realiza la lectura finita de muestras y se guarda la señal en un vector. Finalmente, se genera un gráfico que muestra la señal adquirida en función del tiempo, permitiendo visualizar claramente la señal EOG en formato digital lista para su posterior análisis.
+<img width="320" height="600" alt="image" src="https://github.com/user-attachments/assets/3852f774-2bbb-4476-a4b5-468acdf76399" />
+
 ```python
 Librería de uso de la DAQ
 !python -m pip install nidaqmx     
