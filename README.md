@@ -236,14 +236,23 @@ print(f"Máximo: {maximo}")
 print(f"Mínimo: {minimo}")
 ```
 Se calcularon los estadísticos descriptivos fundamentales de la señal EOG para caracterizar su comportamiento en el dominio temporal. 
-*La` media `indica el valor promedio general.*
+*La` media `indica el valor promedio general.
+
 *la `mediana` representa el punto central de los datos.
+
 *la `desviación` estándar muestra la variabilidad o dispersión de la señal.
+
  *El `máximo` y `mínimo` reflejan los valores extremos o picos. 
+ 
  Estos parámetros son esenciales para comprender la distribución y estabilidad de la señal antes de realizar análisis más profundos.
+ 
  **resultados**
 *Media: 0.15874137409805553
+
 *Mediana: 0.13174945232458413
+
 *Desviación estándar: 0.1580258539091611
+
 *Máximo: 0.7196162504842505
+
 *Mínimo: -0.49320164741948247
