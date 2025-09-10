@@ -7,7 +7,6 @@ En este laboratorio  se observo cómo se comportan las señales tanto en el tiem
 ## Parte A
 
 ```mermaid
-
 graph TD
     A([Inicio]) --> B[Encontrar la señal y(n) resultante de la convolución de cada miembro del grupo, usando sumatoria]
     B --> C[Realizar la represenatción grafica y secuencial a mano]
@@ -17,7 +16,6 @@ graph TD
     F --> G[Calcular señal y(n)]
     G --> H[Graficar señales]
     L --> M([Fin])
-
 ```
 <p align="center">
     <img <img width="1155" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
