@@ -22,7 +22,7 @@ Este bloque importa librerías clave para analizar señales biológicas: ` wfdb`
 
 ## Parte A
 <p align="center">
-    <img <img width="900" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
+    <img <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/b8c7986e-e425-430a-8730-fa0a47cef2b5" />
 </p>
 
 ## Señal y[n] resultante de la convolución
