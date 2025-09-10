@@ -370,7 +370,11 @@ Adicionalmente se realizo la clasifiacion de la señal :
 <h1 align="center"><i><b>Bibliografia</b></i></h1>
 
 [1]https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 [2]https://www.w3schools.com/python/default.asp
+
 [3]https://www.spyder-ide.org/
+
 [4]https://www.ni.com/es/support/downloads/drivers/download.ni-daq-mx.html?srsltid=AfmBOop-UElW8OLmEl4SfkDFLwaI0hCgohxlfwcTWo326OHB-MLJ-aNv#569353
+
 [5]https://www.anaconda.com/download
