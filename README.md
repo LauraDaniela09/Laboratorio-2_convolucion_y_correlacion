@@ -79,5 +79,10 @@ Este código en Python calcula la convolución discreta entre dos señales utili
 La convolución es una operación fundamental en procesamiento de señales, ya que permite analizar cómo una señal se ve afectada por un sistema. Finalmente, el código imprime las señales h, x y y para visualizar los datos y el resultado de la convolución.
 
 ## Parte B
+<p align="center">
+<img width="867" height="365" alt="image" src="https://github.com/user-attachments/assets/9c230bfd-b256-43fb-aa1b-c730169ba8e8" />
+</p>
+
+Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
 
 ## Parte C
