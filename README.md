@@ -84,5 +84,10 @@ La convolución es una operación fundamental en procesamiento de señales, ya q
 </p>
 
 Tenemos dos señales sinusoidales con la misma frecuencia (100Hz).
+<p align="center">
+    <img width="1127" height="419" alt="image" src="https://github.com/user-attachments/assets/ea0980be-05ba-41c2-9b43-2d785afde5c0" />
+    </p>
+    Sustituimos el valor de Ts (periodo de muestreo) para calcular w (frecuencia angular discreta)  y Fs (frecuencia de muestreo). 
+    Esta frecuencia angular discreta la reemplazamos como el argumento en la ecuación de cada señal.
 
 ## Parte C
